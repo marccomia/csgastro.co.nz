@@ -1,0 +1,81 @@
+/* Add here all your CSS customizations */
+
+// HOME Page Custom CSS
+
+h2.short.word-rotator-title{
+  font-size: 2em;
+}
+.patient-info{
+    img{
+       height: 260px !important; 
+       width: 260px !important;
+    }
+}
+
+.waitemata-section{   
+  padding: 5%;
+  width: 100%;
+  p{color:#ffff;  } 
+  img{width: 100%;}
+  a {
+    span{padding: 10px !important;border-radius: 5px !important;}
+  }
+}
+
+h2.short.word-rotator-title{
+  p{
+    line-height: 40px;
+  }
+}
+
+// Patient information Page
+.portfolio-list {
+
+    img{
+        height: 260px !important; 
+        width: 260px !important;
+     }
+}
+
+//Patient Information Details
+aside ul {
+  padding-left: 0px !important;
+}
+
+article.post.post-large.blog-single-post{
+  margin-left: 0px !important;
+}
+
+//Contact Me
+form#Form_ContactForm{
+  
+  input{
+    width: 100%;
+    padding: 5px;
+
+  }
+  textarea{
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+// Footer
+
+footer{
+  margin-top: 0px !important;
+}
+
+/* font size */
+.font-24{
+  font-size: 24px !important;
+}
+.font-20{
+  font-size: 20px !important;
+}
+.font-15{
+  font-size: 15px !important;
+}
+.font-10{
+  font-size: 10px !important;
+}
