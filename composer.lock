@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b41565c0b808e7aa64669433ef098e9",
+    "content-hash": "6ae3b78013bb21c7dde4f47711b93a50",
     "packages": [
         {
             "name": "axllent/silverstripe-favicons",
@@ -4567,8 +4567,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/recipe-cms": 0,
-        "silverstripe/googlesitemaps": 20
+        "silverstripe/recipe-cms": 0
     },
     "prefer-stable": true,
     "prefer-lowest": false,

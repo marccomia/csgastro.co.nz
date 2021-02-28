@@ -21,14 +21,18 @@ h2.short.word-rotator-title p {
   line-height: 40px; }
 
 .portfolio-list img {
-  height: 260px !important;
-  width: 260px !important; }
+  height: 250px !important; }
 
 aside ul {
   padding-left: 0px !important; }
 
 article.post.post-large.blog-single-post {
   margin-left: 0px !important; }
+
+section.hiddentag p {
+  display: none; }
+section.hiddentag ul {
+  display: none; }
 
 form#Form_ContactForm input {
   width: 100%;
@@ -52,5 +56,8 @@ footer {
 
 .font-10 {
   font-size: 10px !important; }
+
+.txtwhite {
+  color: #fff !important; }
 
 /*# sourceMappingURL=custom.css.map */

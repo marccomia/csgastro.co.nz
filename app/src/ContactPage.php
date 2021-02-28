@@ -2,7 +2,7 @@
 namespace SilverStripe\Lessons;
 
 use Page;
-use SilverStripe\AssetAdmin\Forms\UploadField;
+
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
@@ -19,11 +19,6 @@ class ContactPage extends Page {
         'MapEmbeddedTwo' => 'HTMLText',
         'GetInTouchContent' => 'HTMLText'
     );
-
-    private static $has_one = array(
-        'ImageGetInTouch' => Image::class,
-    );
-
 
     private static $has_many = array(
         'CompaniesAddress' => CompanyAddressObject::class

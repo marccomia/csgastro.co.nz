@@ -33,9 +33,9 @@
             <div class="toogle" data-plugin-toggle>
                 <% if $Frquestnlyaskquestions %>
                     <% loop $Frquestnlyaskquestions %>
-                        <section class="toggle active">
-                            <label>$FAQtitle</label>
-                            $FAQdescription
+                        <section class="toggle id{$ID} hiddentag" data-faqID="{$ID}">
+                            <label>{$FAQtitle}</label>
+                                    {$FAQdescription}
                         </section>
                     <% end_loop %>                      
                 <% end_if %>

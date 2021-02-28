@@ -147,15 +147,17 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-xs-12">
-                <p class="lead">I am performing endoscopy at Waitemata Endoscopy Clinic.</p>
-                <p class="lead">Waitemata Endoscopy Ltd are Endoscopy Centres developed in partnership with Southern 
-                Cross Hospitals Limited in order to provide a comprehensive endoscopy service to patients Auckland wide, 
-                from our Northern Clinic on Auckland’s North Shore to our new clinic at Lincoln Road, Henderson in West Auckland.</p>   
+                <div class="col-md-6 col-xs-12 txtwhite">
+                    <h1 style="color:#ffff;">I am performing endoscopy at Waitemata Endoscopy.</h1>
+                    <p class="lead">Celebrating 10 years of providing the most comprehensive private endoscopy services to the Shore, North and West.</p>
+                    <p>Waitemata Endoscopy is a purpose built private endscopy suite offering access to a group of surgeons and
+                    gastroenterologists working together at Southern Cross Hospital North Harbour. We offer diagnostic and therapeutic gastroscopy /
+                    colonoscopy and accept direct GP referrals, either to the group, or to an individual specialist.
+                    </p>   
                 </div>
 
                 <div class="col-md-6 col-xs-12">
-                    <img src="https://www.waitemataendoscopy.co.nz/media/1141/waitemata-endoscopy_logo_horizontal_tagline.png" style="width=100%;">
+                    <img src="img/waitematalogo.webp" style="width=100%;">
                 </div>
             </div>
         </div>

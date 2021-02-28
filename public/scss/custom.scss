@@ -32,8 +32,7 @@ h2.short.word-rotator-title{
 .portfolio-list {
 
     img{
-        height: 260px !important; 
-        width: 260px !important;
+        height: 250px !important; 
      }
 }
 
@@ -45,6 +44,18 @@ aside ul {
 article.post.post-large.blog-single-post{
   margin-left: 0px !important;
 }
+
+//FAQ Section
+section.hiddentag{
+
+  p{
+    display: none;
+  }
+  ul{
+    display: none;
+  }
+}
+
 
 //Contact Me
 form#Form_ContactForm{
@@ -78,4 +89,8 @@ footer{
 }
 .font-10{
   font-size: 10px !important;
+}
+//color
+.txtwhite{ 
+  color: #fff !important;
 }

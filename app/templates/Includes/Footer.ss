@@ -36,6 +36,7 @@
                         <ul>
                             <li><a href="$AbosulteURL/faq">FAQ's</a></li>
                             <li><a href="$AbosulteURL/contact-us">Contact</a></li>
+                            <li><a href="$AbosulteURL/sitemap.xml">Site Map</a></li>
                         </ul>
                     </nav>
                 </div>
