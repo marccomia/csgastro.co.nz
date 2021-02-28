@@ -29,7 +29,7 @@
                     </a>
                 </div>
                 <div class="col-md-7 col-xs-5">
-                    <p>© Copyright {$Now.Year}. All Rights Reserved developed by Marc Comia</p>
+                    <p>© Copyright {$Now.Year}. All Rights Reserved</p>
                 </div>
                 <div class="col-md-4 col-xs-4">
                     <nav id="sub-menu">
