@@ -16,41 +16,41 @@ use SilverStripe\Forms\TextField;
 
 class ContactPageController extends PageController {
     
-    private static $allowed_actions = ['ContactForm'];
+    private static $allowed_actions = [
+        'ContactForm',
+    ];
 
     public function ContactForm()
     {
         $fields = new FieldList(
-            TextField::create('Name','Name')->addExtraClass(''),
-            EmailField::create('Email', 'Email')->addExtraClass(''),
-            NumericField::create('Phone', 'Phone')->addExtraClass(''),
-            DateField::create('DOB', 'Date of Birth')->addExtraClass(''),
-            TextField::create('GP','Name of GP and Medical Center')->addExtraClass(''),
-            TextareaField::create('Message', 'Message')->addExtraClass('')
+            TextField::create('Name'),
+            EmailField::create('Email'),
+            NumericField::create('Phone'),
+            DateField::create('DOB', 'Date of Birth'),
+            TextField::create('GP','Name of GP and Medical Center'),
+            TextareaField::create('Message')
         );
 
-        $actions = new FieldList(
-            new FormAction('submit', 'Submit')
-        );
-
+        $actions = new FieldList( new FormAction('submit', 'Submit'));
         $validator = new RequiredFields('Name', 'Email', 'Phone', 'DOB', 'GP', 'Message');
-
-        $form = New Form($this, 'ContactForm', $fields, $actions, $validator);      
+        $form = New Form(
+            $this, 
+            'ContactForm', 
+            $fields, 
+            $actions, 
+            $validator
+        );      
         $form->enableSpamProtection();
-
         $data = $this->getRequest()->getSession()->get("FormData.{$form->getName()}.data");
 
         return $data ? $form->loadDataFrom($data) : $form;
-
-       
     }
 
-    public function submit($data, $form){
-
+    public function submit($data, $form)
+    {
+        $contactpage = ContactPage::get()->First();
         $session = $this->getRequest()->getSession();
         $session->set("FormData.{$form->getName()}.data", $data);
-        $contactpage = ContactPage::get()->First();
-
         
         $email = new Email();
 
@@ -66,17 +66,12 @@ class ContactPageController extends PageController {
             <p><strong>Name of GP / Medical Center</strong> {$data['GP']}</p>
             <p><strong>Message:</strong> {$data['Message']}</p>
         ";
-      
-
         $email->setBody($messageBody);
-
-        if ($email->send()){
+        if ($email->send()) {
             $session->clear("FormData.{$form->getName()}.data");
             $form->sessionMessage('Thanks for your message - I will be in touch with you shortly','good');
-          
-        }else{
-            $form->sessionMessage('Oops! Something wrong please try again','bad');
-        }
+        } else $form->sessionMessage('Oops! Something wrong please try again','bad');
+        
         return $this->redirectBack();
     }
 }

@@ -1,10 +1,15 @@
 /* Add here all your CSS customizations */
 
-// HOME Page Custom CSS
+/*//////////////////////////// Home PAGE ////////////////////////////// */
 
-h2.short.word-rotator-title{
-  font-size: 2em;
+.p--content{
+    p {
+        line-height: 40px;
+        font-size: 2em;
+    }
+    
 }
+
 .patient-info{
     img{
        height: 260px !important; 
@@ -12,23 +17,37 @@ h2.short.word-rotator-title{
     }
 }
 
-.waitemata-section{   
-  padding: 5%;
-  width: 100%;
-  p{color:#ffff;  } 
-  img{width: 100%;}
-  a {
-    span{padding: 10px !important;border-radius: 5px !important;}
-  }
+.waitemata-section {   
+    padding: 5%;
+    width: 100%;
+
+    p {
+        color:#ffff;
+    } 
+    img{
+        width: 100%;
+    }
+    a {
+        span{padding: 10px !important;border-radius: 5px !important;}
+    }
 }
 
-h2.short.word-rotator-title{
-  p{
-    line-height: 40px;
-  }
+.contact-details {
+    font-size: 1.25em;
 }
 
-// Patient information Page
+
+/*//////////////////////////// About PAGE ////////////////////////////// */
+.content {
+    font-size: 1.25em;
+    h4{
+        font-size: 1em;
+    }
+}
+
+
+
+/*//////////////////////////// Patient Info PAGE ////////////////////////////// */
 .portfolio-list {
 
     img{
@@ -36,16 +55,16 @@ h2.short.word-rotator-title{
      }
 }
 
-//Patient Information Details
+/*//////////////////////////// Patient Info Details PAGE ////////////////////////////// */
 aside ul {
-  padding-left: 0px !important;
+    padding-left: 0px !important;
 }
 
 article.post.post-large.blog-single-post{
-  margin-left: 0px !important;
+    margin-left: 0px !important;
 }
 
-//FAQ Section
+/*//////////////////////////// FAQ PAGE ////////////////////////////// */
 section.hiddentag{
 
   p{
@@ -56,14 +75,12 @@ section.hiddentag{
   }
 }
 
+/*//////////////////////////// Contact PAGE ////////////////////////////// */
 
-//Contact Me
-form#Form_ContactForm{
-  
+form#Form_ContactForm {  
   input{
     width: 100%;
     padding: 5px;
-
   }
   textarea{
     width: 100%;
@@ -71,26 +88,41 @@ form#Form_ContactForm{
   }
 }
 
-// Footer
+/*//////////////////////////// Footer Area ////////////////////////////// */
 
 footer{
   margin-top: 0px !important;
 }
 
 /* font size */
-.font-24{
-  font-size: 24px !important;
+.font-16{
+  font-size: 1em !important;
 }
 .font-20{
-  font-size: 20px !important;
+  font-size: 1.25em !important;
 }
-.font-15{
-  font-size: 15px !important;
+.font-24{
+  font-size: 1.5em !important;
 }
-.font-10{
-  font-size: 10px !important;
+.font-32{
+  font-size: 2em !important;
 }
-//color
+
+
+/*//////////////////////////// Color Adjustment ////////////////////////////// */
 .txtwhite{ 
   color: #fff !important;
+}
+
+
+/*//////////////////////////// Media Queries ////////////////////////////// */
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {     
+    .p--content{
+        p {
+            line-height: 30px;
+            font-size: 1.25em;    
+        }
+    }
 }

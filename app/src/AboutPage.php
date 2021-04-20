@@ -15,25 +15,23 @@ class AboutPage extends Page {
     //Strongly recommended to defind @table_name your class will be your table name.  
     private static $table_name = 'AboutPage';
 
-    private Static $db = array(
+    private Static $db = [
         'MainTitle' => 'Varchar',
-    );
+    ];
 
-    private static $has_one = array(
-        'Photo' => Image::class,
-        'Photo2' => Image::class        
-    );      
+    private static $has_one = [
+        'Photo'     => Image::class,
+        'Photo2'    => Image::class,        
+    ];      
 
-    private static $has_many = array(
-        'AboutArticlesObject' => AboutArticleObject::class
-    );
+    private static $has_many = [
+        'AboutArticlesObject' => AboutArticleObject::class,
+    ];
 
-    private static $owns = array(
+    private static $owns = [
         'Photo',
         'Photo2',
-    );
-
-
+    ];
 
     /**
      * CMS Fields
@@ -42,11 +40,9 @@ class AboutPage extends Page {
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-
         $fields->addFieldToTab('Root.Main', $photo = UploadField::create('Photo', 'Photo One'), 'Content' );
         $fields->addFieldToTab('Root.Main', $photo2 = UploadField::create('Photo2', 'Photo Two'), 'Content' );
         $fields->addFieldToTab('Root.Main', TextField::create('MainTitle', 'Main Header'), 'Content' );
-
         $fields->addFieldToTab('Root.Article Section', GridField::create(
             'AboutArticlesObject',
             'Adding a new Article on About Page',
@@ -58,8 +54,6 @@ class AboutPage extends Page {
         $photo->setFolderName('Aboutme-photos');
         $photo2->getValidator()->setAllowedExtensions(['png', 'jpeg', 'jpg']); 
         $photo2->setFolderName('Aboutme-photos');
-
         return $fields;
-
     }
 }

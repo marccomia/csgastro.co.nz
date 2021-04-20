@@ -16,7 +16,6 @@
         </div>
     </div>
 </section>
-
   
 <div class="container push-bottom">
     <div class="row">
@@ -28,7 +27,7 @@
         </div>
 
         <div class="col-md-6">
-            <div class="edit">
+            <div class="contact-details">
                 <% if $CompanyAdddress %>
                     <% loop $CompanyAddress %>
                         <h4>{$cName}</h4>

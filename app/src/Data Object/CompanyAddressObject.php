@@ -10,26 +10,25 @@ use SilverStripe\ORM\DataObject;
 
 class CompanyAddressObject extends DataObject{
 
-    //Strongly recommended to defind @table_name your class will be your table name.  
     private static $table_name = 'CompanyAdressObject';
 
-    private static $db = array(
-        'cName' => 'Varchar',
-        'cAddress' =>'Varchar',
-        'cPhone' => 'Varchar',
-        'cFax' => 'Varchar',
-        'cMobile' => 'Varchar',
-        'cEmail' => 'Varchar',   
-    );
+    private static $db = [
+        'cName'     => 'Varchar',
+        'cAddress'  =>'Varchar',
+        'cPhone'    => 'Varchar',
+        'cFax'      => 'Varchar',
+        'cMobile'   => 'Varchar',
+        'cEmail'    => 'Varchar',   
+    ];
 
-    private static $has_one = array(
+    private static $has_one = [
         'ContactPage' => ContactPage::class
-    );
+    ];
 
-    private static $summary_fields = array(
-        'cName' => 'Hospital Name',
-        'cAddress' => 'Hosputal Address',
-    );
+    private static $summary_fields = [
+        'cName'     => 'Hospital Name',
+        'cAddress'  => 'Hosputal Address',
+    ];
 
      /**
      * @return FieldList
@@ -46,5 +45,4 @@ class CompanyAddressObject extends DataObject{
         );
         return $fields;
     } 
-
 }

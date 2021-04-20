@@ -10,10 +10,9 @@ use SilverStripe\Forms\TextField;
 class FAQPage extends Page {
    
     
-    private static $has_many = array(
-        'Frquestnlyaskquestions' => Frequentlyaskquestion::class
-    );
-
+    private static $has_many = [
+        'Frquestnlyaskquestions' => Frequentlyaskquestion::class,
+    ];
 
     /**
      * CMS Fields
@@ -22,17 +21,12 @@ class FAQPage extends Page {
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-
         $fields->addFieldsToTab('Root.Frequently Ask Question', GridField::create(
             'Frquestnlyaskquestions',
             'FAQ Details',
             $this->Frquestnlyaskquestions(),
             GridFieldConfig_RecordEditor::create()
-
         ));
-
-        return $fields;
-        
+        return $fields;        
     }
-
 }

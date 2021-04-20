@@ -13,27 +13,23 @@ class ContactPage extends Page {
 
     private static $table_name = 'ContactPage';
 
-    private static $db = array(
-        'WebsiteEmailAddress' => 'Varchar(50)',
-        'MapEmbedded' => 'HTMLText',
-        'MapEmbeddedTwo' => 'HTMLText',
-        'GetInTouchContent' => 'HTMLText'
-    );
+    private static $db = [
+        'WebsiteEmailAddress'   => 'Varchar(50)',
+        'MapEmbedded'           => 'HTMLText',
+        'MapEmbeddedTwo'        => 'HTMLText',
+        'GetInTouchContent'     => 'HTMLText',
+    ];
 
-    private static $has_many = array(
+    private static $has_many = [
         'CompaniesAddress' => CompanyAddressObject::class
-    );
-
-
+    ];
 
     public function getCMSFields()
     {
-        $fields = parent::getCMSFields();
-        
+        $fields = parent::getCMSFields();        
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('MapEmbedded', 'Northsore Hospital')->setDescription('Map Embeded One'), 'Content');
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('MapEmbeddedTwo', 'West Hospital')->setDescription('Map Embeded Two'), 'Content');
         $fields->addFieldToTab('Root.Main', TextField::create('WebsiteEmailAddress', 'Email Address')->setDescription('note: Website email address or your main emailaddress'), 'MapEmbedded');
-
         $fields->addFieldsToTab('Root.Company Address', GridField::create(
             'CompaniesAddress',
             'Companyies Address Details',
@@ -41,16 +37,8 @@ class ContactPage extends Page {
             GridFieldConfig_RecordEditor::create()
 
         ));
-
-        $fields->addFieldsToTab('Root.Get In Touch', [
-            HTMLEditorField::create('GetInTouchContent','Footer Content'),
-
-         
-        ]);
+        $fields->addFieldToTab('Root.Get In Touch', HTMLEditorField::create('GetInTouchContent','Footer Content'));
 
         return $fields;
-    }
-
-
-    
+    }    
 }
