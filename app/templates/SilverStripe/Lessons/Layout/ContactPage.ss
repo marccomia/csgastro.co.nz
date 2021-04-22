@@ -1,21 +1,4 @@
-
-<section class="page-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Contact Me</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Contact Me</h1>
-            </div>
-        </div>
-    </div>
-</section>
+<% include TopBreadcrumbs %>
   
 <div class="container push-bottom">
     <div class="row">

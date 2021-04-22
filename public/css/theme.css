@@ -1444,7 +1444,7 @@ body #header nav.mega-menu .mega-menu-signin ul.dropdown-menu li a, body #header
 	/* content editor display image size reduxe */
 	p img {
 		max-width: 100%;
-		max-height: 200px;
+		height:auto;
 	}
 	div.ytp-cued-thumbnail-overlay-image{
 		max-width: 100%;

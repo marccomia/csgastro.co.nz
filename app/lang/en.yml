@@ -1,0 +1,76 @@
+en:
+  Page:
+    DESCRIPTION: 'Generic content page'
+    PLURALNAME: Pages
+    PLURALS:
+      one: 'A Page'
+      other: '{count} Pages'
+    SINGULARNAME: Page
+  SilverStripe\Lessons\AboutArticleObject:
+    PLURALNAME: 'About Article Objects'
+    PLURALS:
+      one: 'An About Article Object'
+      other: '{count} About Article Objects'
+    SINGULARNAME: 'About Article Object'
+  SilverStripe\Lessons\AboutPage:
+    PLURALNAME: 'About Pages'
+    PLURALS:
+      one: 'An About Page'
+      other: '{count} About Pages'
+    SINGULARNAME: 'About Page'
+  SilverStripe\Lessons\Category:
+    PLURALNAME: Categories
+    PLURALS:
+      one: 'A Category'
+      other: '{count} Categories'
+    SINGULARNAME: Category
+  SilverStripe\Lessons\CategoryAdmin:
+    MENUTITLE: 'Patient Info Categories'
+  SilverStripe\Lessons\CompanyAddressObject:
+    PLURALNAME: 'Company Address Objects'
+    PLURALS:
+      one: 'A Company Address Object'
+      other: '{count} Company Address Objects'
+    SINGULARNAME: 'Company Address Object'
+  SilverStripe\Lessons\ContactPage:
+    PLURALNAME: 'Contact Pages'
+    PLURALS:
+      one: 'A Contact Page'
+      other: '{count} Contact Pages'
+    SINGULARNAME: 'Contact Page'
+  SilverStripe\Lessons\FAQPage:
+    PLURALNAME: 'F A Q Pages'
+    PLURALS:
+      one: 'A F A Q Page'
+      other: '{count} F A Q Pages'
+    SINGULARNAME: 'F A Q Page'
+  SilverStripe\Lessons\Frequentlyaskquestion:
+    PLURALNAME: Frequentlyaskquestions
+    PLURALS:
+      one: 'A Frequentlyaskquestion'
+      other: '{count} Frequentlyaskquestions'
+    SINGULARNAME: Frequentlyaskquestion
+  SilverStripe\Lessons\HomePage:
+    PLURALNAME: 'Home Pages'
+    PLURALS:
+      one: 'A Home Page'
+      other: '{count} Home Pages'
+    SINGULARNAME: 'Home Page'
+  SilverStripe\Lessons\Interest:
+    PLURALNAME: Interests
+    PLURALS:
+      one: 'An Interest'
+      other: '{count} Interests'
+    SINGULARNAME: Interest
+  SilverStripe\Lessons\PatientInfoDetailsPage:
+    PLURALNAME: 'Patient Info Details Pages'
+    PLURALS:
+      one: 'A Patient Info Details Page'
+      other: '{count} Patient Info Details Pages'
+    SINGULARNAME: 'Patient Info Details Page'
+  SilverStripe\Lessons\PatientInformationPage:
+    PLURALNAME: 'Patient Information Pages'
+    PLURALS:
+      one: 'A Patient Information Page'
+      other: '{count} Patient Information Pages'
+    SINGULARNAME: 'Patient Information Page'

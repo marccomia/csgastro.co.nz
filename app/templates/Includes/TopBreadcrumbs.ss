@@ -1,18 +1,17 @@
-
-<!-- Hero Start -->
-<div class="slider-area ">
-    <div class="slider-height2 d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="hero-cap">
-                        <h2>$Title</h2>
-                        <nav aria-label="breadcrumb ">                                                        
-                            $Breadcrumbs                        
-                        </nav>
-                    </div>
-                </div>
+<section class="page-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><a href="$AbsoluteURL">Home</a></li>
+                    <li class="active">$Title</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>$Title</h1>
             </div>
         </div>
     </div>
-</div>
+</section>

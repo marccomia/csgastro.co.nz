@@ -14,9 +14,9 @@ class CallToActionDataObject extends DataObject {
     private static $table_name = ' CallToActionDataObject';
 
     private static $db = [
-        'Title' => 'Varchar(50)',
+        'Title'         => 'Varchar(50)',
         'LinksToAction' => 'Varchar(100)',
-        'SortOrder' => 'Int',
+        'SortOrder'     => 'Int',
     ];
 
     private static $indexes = [
@@ -34,7 +34,7 @@ class CallToActionDataObject extends DataObject {
 
     private static $summary_fields = [
         'GridThumbnail' => '',
-        'Title' => 'Title of Interest',
+        'Title'         => 'Title of Interest',
     ];
 
     private static $many_many = [

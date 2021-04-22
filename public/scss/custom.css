@@ -1,0 +1,84 @@
+/* Add here all your CSS customizations */
+/*//////////////////////////// Home PAGE ////////////////////////////// */
+.p--content p {
+  line-height: 40px;
+  font-size: 2em; }
+
+.patient-info img {
+  height: 260px !important;
+  width: 260px !important; }
+
+.waitemata-section {
+  padding: 5%;
+  width: 100%; }
+  .waitemata-section p {
+    color: #ffff; }
+  .waitemata-section img {
+    width: 100%; }
+  .waitemata-section a span {
+    padding: 10px !important;
+    border-radius: 5px !important; }
+
+.contact-details {
+  font-size: 1.25em; }
+
+/*//////////////////////////// About PAGE ////////////////////////////// */
+.content {
+  font-size: 1.25em; }
+  .content h4 {
+    font-size: 1em; }
+
+/*//////////////////////////// Patient Info PAGE ////////////////////////////// */
+.portfolio-list img {
+  height: 250px !important; }
+
+/*//////////////////////////// Patient Info Details PAGE ////////////////////////////// */
+aside ul {
+  padding-left: 0px !important; }
+
+article.post.post-large.blog-single-post {
+  margin-left: 0px !important; }
+
+/*//////////////////////////// FAQ PAGE ////////////////////////////// */
+section.hiddentag p {
+  display: none; }
+section.hiddentag ul {
+  display: none; }
+
+/*//////////////////////////// Contact PAGE ////////////////////////////// */
+form#Form_ContactForm input {
+  width: 100%;
+  padding: 5px; }
+form#Form_ContactForm textarea {
+  width: 100%;
+  padding: 5px; }
+
+/*//////////////////////////// Footer Area ////////////////////////////// */
+footer {
+  margin-top: 0px !important; }
+
+/* font size */
+.font-16 {
+  font-size: 1em !important; }
+
+.font-20 {
+  font-size: 1.25em !important; }
+
+.font-24 {
+  font-size: 1.5em !important; }
+
+.font-32 {
+  font-size: 2em !important; }
+
+/*//////////////////////////// Color Adjustment ////////////////////////////// */
+.txtwhite {
+  color: #fff !important; }
+
+/*//////////////////////////// Media Queries ////////////////////////////// */
+/*  Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+  .p--content p {
+    line-height: 30px;
+    font-size: 1.25em; } }
+
+/*# sourceMappingURL=custom.css.map */
