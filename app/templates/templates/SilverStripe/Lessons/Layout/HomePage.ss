@@ -34,63 +34,42 @@
 </div>
 <div class="container">
     <div class="row">    
-        <div class="col-lg-6">  
-            <div class="embed-responsive embed-responsive-16by9">
-                <video width="400" controls>
-                    <source src="$VideoOne.URL" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>      
-            <h4>{$VideoOneTitle} </h4>
-            <Article class="lead">   
-                {$VideoOneContent}            
-            </Article>
+        <div class="col-lg-6">            
+            <% if $LeftContent %>
+                <Article class="lead" style="with=50%;">
+                    {$LeftContent}    
+                </Article>                         
+            <% else %>
+            <img class="img-responsive" src="https://via.placeholder.com/477" alt="layout styles" data-appear-animation="fadeInLeft">
+            <% end_if %>
         </div>
-
-        <div class="col-lg-6"> 
-            <div class="embed-responsive embed-responsive-16by9">
-                <video width="400" controls>
-                    <source src="$VideoTwo.URL" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>
-            <h4>{$VideoTwoTitle}</h4>
-            <Article class="lead">   
-                {$VideoTwoContent}            
-            </Article>
-           
-        </div>
-    
-        <hr class="tall" />
-
-        <div class="col-lg-6">  
-            <div class="embed-responsive embed-responsive-16by9">
-                <video width="400" controls>
-                    <source src="$VideoThree.URL" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>        
-            <h4>{$VideoThreeTitle} </h4>
-            <Article class="lead">   
-                {$VideoThreeContent}            
-            </Article>
-        </div>
-
-        <div class="col-lg-6"> 
-            <div class="embed-responsive embed-responsive-16by9">
-                <video width="400" controls>
-                    <source src="$VideoFour.URL" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>
-            <h4>{$VideoFourTitle}</h4>
-            <Article class="lead">   
-                {$VideoFourContent}            
-            </Article>
-            
+        <div class="col-lg-6">
+        <% if $Header %><h2><strong>{$Header}<strong></h2><% end_if %>
+            <Article class="lead" style="with=50%;">
+                {$Body}    
+            </Article>              
         </div>
     </div>
 
+    <hr class="tall" />
+
+    <div class="row">
+        <div class="col-lg-6">
+            <% if $HeaderTwo %> <h2><strong>{$HeaderTwo}</strong></h2><% end_if %>
+            <Article class="lead" style="with=50%;">
+                {$BodyTwo}
+            </Article>                
+        </div>
+        <div class="col-lg-6">
+            <% if $RightContent %>
+                 <Article class="lead" style="with=50%;">
+                    $RightContent
+                </Article>                   
+            <% else %>
+                <img class="img-responsive" src="https://via.placeholder.com/477" alt="layout styles" data-appear-animation="fadeInLeft">
+            <% end_if %>
+        </div>
+    </div>
 </div>
 <div class="container">				
     <div class="row">
